@@ -1,0 +1,395 @@
+/* Global Styles */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333; /* Text color for light mode */
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.active {
+    color: #007BFF;
+    font-weight: bold;
+}
+
+button {
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);  /* Slight zoom effect on hover */
+}
+
+button:active {
+    transform: scale(0.95);  /* Slight shrink effect when clicked */
+}
+
+/* Header with Navigation */
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 10;
+    color: #333; /* Dark text in light mode */
+}
+
+body.dark-mode header {
+    background-color: #333;
+    color: white; /* White text in dark mode */
+}
+
+.company-title h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+body.dark-mode .company-title h1 {
+    color: white; /* White text in dark mode */
+}
+
+body.dark-mode .steps-cards h3 {
+    background-color: #444;
+    color: white; /* Dark background in dark mode */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* Theme Switcher (Moon/Sun Emojis) */
+#theme-switcher {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero .background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.hero-content {
+    z-index: 1;
+    text-align: center;
+}
+
+/* Buttons */
+button {
+    padding: 15px 30px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode .hero-content h1,
+body.dark-mode .hero-content p {
+    color: white;
+}
+
+body.dark-mode nav ul li a {
+    color: white;
+}
+
+body.dark-mode nav ul li a:hover {
+    color: #007BFF;
+}
+
+/* Travel Packages Section */
+.package-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.package-card img:hover {
+    transform: scale(1.05);  /* Adds a zoom effect when hovering */
+}
+
+/* Service, Destination, and Package Cards */
+.service-cards, .destination-cards, .package-cards, .testimonial-cards, .steps-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Travel Destinations Section */
+.destination-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.destination-card img:hover {
+    transform: scale(1.05);  /* Adds a zoom effect when hovering */
+}
+
+/* Services Section */
+.service-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service-card img:hover {
+    transform: scale(1.05);  /* Adds a zoom effect when hovering */
+}
+
+.service-card, .destination-card, .package-card, .testimonial-card, .step-card {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+body.dark-mode .service-card,
+body.dark-mode .destination-card,
+body.dark-mode .package-card,
+body.dark-mode .testimonial-card,
+body.dark-mode .gallery,
+body.dark-mode .step-card {
+    background-color: #444;
+    color: white; /* Ensure text is visible in dark mode */
+}
+
+/* Contact Form */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    padding: 12px;
+    width: 80%;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* CEO Information Section */
+.ceo-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+body.dark-mode .ceo-info {
+    background-color: #333; /* Dark background for dark mode */
+}
+
+.ceo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff; /* Default white background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+body.dark-mode .ceo-container {
+    background-color: #444; /* Darker background for dark mode */
+}
+
+.ceo-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.ceo-details h3 {
+    font-size: 24px;
+    color: #333; /* Light text color for h3 */
+}
+
+body.dark-mode .ceo-details h3 {
+    color: white; /* White text in dark mode */
+}
+
+.ceo-details p {
+    font-size: 16px;
+    color: #555;
+}
+
+body.dark-mode .ceo-details p {
+    color: #ddd; /* Lighter text color for dark mode */
+}
+
+.ceo-details a {
+    color: #007BFF;
+}
+
+body.dark-mode .ceo-details a {
+    color: #66c0ff; /* Lighter link color in dark mode */
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 50px 20px;
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* Slider Container */
+.gallery-slider {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    max-width: 1000px; /* Max width for better alignment */
+    margin: 0 auto; /* Center it */
+}
+
+.gallery-container {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth sliding effect */
+}
+
+.gallery-slide {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.gallery-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Navigation Arrows */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive for Mobile */
+@media screen and (max-width: 768px) {
+    .gallery h2 {
+        font-size: 28px;
+    }
+
+    .service-cards, .destination-cards, .package-cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .steps-cards {
+        flex-direction: column;
+    }
+
+    .ceo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Centering content */
+    .service-card, .destination-card, .package-card, .testimonial-card, .step-card {
+        width: 80%; /* Limit width to 80% on small screens */
+        margin: 0 auto; /* Center the cards */
+    }
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jageer Mustafa Travels</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Navigation on the Top Right -->
+    <header>
+        <div class="company-title">
+            <h1>Jageer e Mustafa Tours and Travels (SMC Private Limited)</h1>
+        </div>
+        <nav>
+            <!-- Hamburger Menu for Mobile -->
+            <div id="menu-toggle" class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Theme Switcher with Emojis placed after contacts -->
+        <button id="theme-switcher" aria-label="Switch theme">🌙</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="background">
+            <img id="wallpaper" src="images/wallpaper1.jpg" alt="Wallpaper" />
+        </div>
+        <div class="hero-content">
+            <h1>Perform Umrah with Ease</h1>
+            <p>Book your spiritual journey to the House of Allah with Jageer Mustafa Travels</p>
+            <button onclick="window.location.href='#packages'">Explore Now</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <img src="images/Saudia (2).jpg" alt="Umrah Package">
+                <h3>Umrah Packages</h3>
+                <p>Experience a spiritually uplifting Umrah journey with our affordable packages.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/hajj.jpg" alt="Hajj Services">
+                <h3>Hajj Services</h3>
+                <p>Let us guide you every step of the way for a safe and fulfilling Hajj pilgrimage.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/Iraq-p.jpg" alt="Ziyarah Tours">
+                <h3>Ziyarat Tours</h3>
+                <p>Explore the most sacred Islamic sites with our guided Ziyarat tours across multiple countries.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations" id="destinations">
+        <h2>Top Destinations</h2>
+        <div class="destination-cards">
+            <div class="destination-card">
+                <img src="images/umrah-p.jpg" alt="Saudi Arabia">
+                <h3>Saudi Arabia</h3>
+                <p>Home of the two holy mosques – the heart of Hajj and Umrah pilgrimages.</p>
+            </div>
+            <div class="destination-card">
+                <img src="images/iran.jpg" alt="Iran">
+                <h3>Iran</h3>
+                <p>Historical Islamic shrines in Mashhad and Qom await your visit.</p>
+            </div>
+            <div class="destination-card">
+                <img src="images/iraq.jpg" alt="Iraq">
+                <h3>Iraq</h3>
+                <p>Sacred destinations like Karbala and Najaf for spiritual connection.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Packages Section -->
+    <section class="packages" id="packages">
+        <h2>Travel Packages</h2>
+        <div class="package-cards">
+            <div class="package-card">
+                <img src="images/umrah-p.jpg" alt="Silver Umrah Package">
+                <h3>Silver Umrah Package</h3>
+                <p>Inclusive of visa, 4-star hotel, and guided group travel.</p>
+                <p>Price: PKR 150,000</p>
+            </div>
+            <div class="package-card">
+                <img src="images/iraq-p.jpg" alt="Ziyarah Iraq Tour">
+                <h3>Ziyarah Iraq Tour</h3>
+                <p>Visit Karbala, Najaf, and Kazmain with full spiritual guidance.</p>
+                <p>Price: PKR 120,000</p>
+            </div>
+            <div class="package-card">
+                <img src="images/iran-p.jpg" alt="Iran Ziyarah Package">
+                <h3>Iran Ziyarah Package</h3>
+                <p>Explore Qom and Mashhad with a complete itinerary and translator.</p>
+                <p>Price: PKR 135,000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Easy Steps Section -->
+    <section class="steps">
+        <h2>3 Easy Steps to Your Journey</h2>
+        <div class="steps-cards">
+            <div class="step-card">
+                <h3>Choose a Destination</h3>
+                <p>Select your destination and travel package.</p>
+            </div>
+            <div class="step-card">
+                <h3>Make Payment</h3>
+                <p>Secure and multiple payment options available.</p>
+            </div>
+            <div class="step-card">
+                <h3>Fly Today</h3>
+                <p>Pack your bags and begin your spiritual journey with ease.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CEO Information and Contact Section -->
+    <section class="ceo-info" id="contact">
+        <h2>Meet the CEO</h2>
+        <div class="ceo-container">
+            <img src="images/ceo.jpeg" alt="Syed Zulifqar Ali Naqvi" class="ceo-image">
+            <div class="ceo-details">
+                <h3>Syed Zulifqar Ali Naqvi</h3>
+                <p><strong>CEO</strong></p>
+                <p><strong>Cell Number:</strong> +92 300 6067828</p>
+                <p><strong>Email:</strong> <a href="mailto:jageermustafa@gmail.com">jageermustafa@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Get in Touch</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Mobile Number" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <p>"My Umrah trip with Jageer Mustafa was seamless and full of blessings!"</p>
+                <p>- Ahmed Raza, Lahore, Pakistan</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Traveled to Iran with them – very smooth and respectful staff."</p>
+                <p>- Fatima Bukhari, Rawalpindi, Pakistan</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"Their Karbala Ziyarah package is the best. I’ll recommend it to all my family."</p>
+                <p>- Zeeshan Ali, Multan, Pakistan</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CEO Travel Moments Gallery Section with Sliding Functionality -->
+    <section class="gallery">
+        <h2>CEO's Travel Moments</h2>
+        <div class="gallery-slider">
+            <div class="gallery-container">
+                <div class="gallery-slide">
+                    <img src="images/1.jpeg" alt="Travel 1">
+                </div>
+                <div class="gallery-slide">
+                    <img src="images/2.jpeg" alt="Travel 2">
+                </div>
+                <div class="gallery-slide">
+                    <img src="images/3.jpeg" alt="Travel 3">
+                </div>
+                <div class="gallery-slide">
+                    <img src="images/4.jpeg" alt="Travel 4">
+                </div>
+                <div class="gallery-slide">
+                    <img src="images/5.jpeg" alt="Travel 5">
+                </div>
+                <div class="gallery-slide">
+                    <img src="images/6.jpeg" alt="Travel 6">
+                </div>
+                <div class="gallery-slide">
+                    <img src="images/7.jpeg" alt="Travel 7">
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">❮</button>
+            <button class="next" onclick="moveSlide(1)">❯</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
